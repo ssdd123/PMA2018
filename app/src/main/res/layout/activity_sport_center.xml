@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SportCenterActivity">
+
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--  The main content view -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Image"
+                android:layout_width="match_parent"
+                android:layout_height="179dp" />
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:text="@string/neutralText"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/Rating" />
+
+            <TextView
+                android:id="@+id/Address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:text="@string/neutralText"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/Name" />
+
+            <TextView
+                android:id="@+id/WorkingHours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:text="@string/neutralText"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/Address" />
+
+            <RatingBar
+                android:id="@+id/Rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:scaleX="0.85"
+                android:scaleY="0.85"
+                android:text="Line 1"
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/Favorite"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Rating"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="18dp"
+                android:layout_toRightOf="@+id/Comment"
+                android:text="@string/favorites"
+                android:textColor="@color/colorTextBlack"
+
+                android:textOff=""
+                android:textOn="" />
+
+            <Button
+                android:id="@+id/Comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comment"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorTextWhite"
+                android:layout_toRightOf="@+id/WorkingHours"
+                android:layout_below="@+id/Rating"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/googleMap"
+                android:layout_width="98dp"
+                android:layout_height="59dp"
+                android:layout_below="@+id/Comment"
+
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/WorkingHours"
+                android:background="@drawable/ic_action_map"
+                android:text="@string/maps" />
+
+            <Button
+                android:id="@+id/Reserve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/WorkingHours"
+                android:layout_marginTop="11dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/reserve"
+                android:textColor="@color/colorTextWhite" />
+
+            <TextView
+                android:id="@+id/ratingTextView"
+                android:layout_width="33dp"
+                android:layout_height="38dp"
+                android:layout_below="@+id/Image"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/Rating"
+                android:maxLength="3"
+                android:maxLines="1" />
+
+        </RelativeLayout>
+
+
+
+
+        <!-- The navigation drawer -->
+        <RelativeLayout
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:id="@+id/drawerPane"
+            android:layout_gravity="start">
+
+            <!-- Profile Box -->
+
+            <RelativeLayout
+                android:id="@+id/profileBox"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/colorPrimaryDark"
+                android:padding="8dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/sportski"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/drawer_title1"
+                        android:textColor="#fff"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/centri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/drawer_title2"
+                        android:textColor="#fff"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- List of Actions (pages) -->
+            <ListView
+                android:id="@+id/navList"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/profileBox"
+                android:choiceMode="singleChoice"
+                android:background="#ffffffff" />
+
+        </RelativeLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ReservationActivity">
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:textColor="@color/colorTextGrey"
+        android:text="@string/neutralText"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <CalendarView
+        android:id="@+id/Calendar"
+        android:layout_width="match_parent"
+        android:layout_height="352dp"
+        android:layout_below="@id/Name"
+        android:layout_marginTop="10dp"
+        android:scaleX="0.95"
+        android:scaleY="0.95" />
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Calendar"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextGrey"
+            android:text="@string/start"
+            android:textStyle="bold"
+            />
+        <Spinner
+            android:id="@+id/startSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinnerItems"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout1"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextGrey"
+            android:text="@string/sport"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/sportSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/sportItems" />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRezervisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/reserve"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorTextWhite"
+        android:layout_below="@+id/layout2"
+        android:layout_marginTop="10dp"
+        />
+
+
+</RelativeLayout>

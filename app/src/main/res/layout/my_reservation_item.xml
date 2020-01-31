@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/colorLightGray">
+
+    <TextView
+        android:id="@+id/SportCenterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="#000"
+        android:text="@string/neutralText"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SportCenterName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/neutralText"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/SportName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Price"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/neutralText"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/ReservationDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SportName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/neutralText"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/Period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ReservationDate"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/neutralText"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/MyReservationId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnPozovi"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:background="#556B2F"
+        android:gravity="center"
+        android:text="@string/invite"
+        android:textColor="@color/colorTextBlack" />
+
+    <Button
+        android:id="@+id/btnOtkazi"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPozovi"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:background="#B22222"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/colorTextBlack" />
+
+    <Button
+        android:id="@+id/btnGoogleMaps"
+        android:layout_width="107dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/btnOtkazi"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/navigation"
+        android:gravity="center"
+
+        android:textColor="@color/colorPrimary" />
+
+</RelativeLayout>

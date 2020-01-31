@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CommentActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="81dp"
+        android:layout_height="59dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:textColor="@color/colorTextGrey"
+        android:text="@string/commentName"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+    <EditText
+        android:id="@+id/commentInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/addComment"
+        android:inputType="text"
+        android:layout_below="@id/commentRecyclerView"
+        android:layout_centerVertical="true"></EditText>
+
+    <Button
+        android:id="@+id/btnComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/addListComment"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorTextWhite"
+        android:layout_below="@+id/commentInput"
+        android:layout_marginTop="2dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/commentRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="349dp"
+        android:layout_below="@+id/Name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp" />
+
+
+</RelativeLayout>

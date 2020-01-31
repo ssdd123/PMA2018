@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1005588330550",
+    "firebase_url": "https://pma2019-master.firebaseio.com",
+    "project_id": "pma2019-master",
+    "storage_bucket": "pma2019-master.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005588330550:android:0ccefa950912a960108097",
+        "android_client_info": {
+          "package_name": "ftn.proj.sportcenters"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1005588330550-vanu7q5pu3ljbifgi5svmjbroe267msn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ftn.proj.sportcenters",
+            "certificate_hash": "453e151f608b7f87e8572a49f74513c3db65e2bb"
+          }
+        },
+        {
+          "client_id": "1005588330550-92kmusd0vquvbgseieuf40j8qr6gnb2s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq_5IunzvQlh3A1ubSRF-EWuPBY9lBjR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1005588330550-92kmusd0vquvbgseieuf40j8qr6gnb2s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sportItems">
+        <item>Tenis</item>
+        <item>Fudbal</item>
+        <item>Rukomet</item>
+    </string-array>
+</resources>

@@ -1,0 +1,84 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Sport centers</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="name">Firstname</string>
+    <string name="lastname">Lastname</string>
+    <string name="repeat_password">Password repeat</string>
+    <string name="city">City</string>
+    <string name="email">Email</string>
+    <string name="addComment">Comment</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_title1">SPORT</string>
+    <string name="drawer_title2">CENTERS</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_refresh">Search</string>
+    <string name="action_search">Search</string>
+    <string name="preferences">Preferences</string>
+    <string name="commentName">Sport Center</string>
+    <string name="commentUser">Stranger</string>
+    <string name="commentDate">11:30 16.09.1995.</string>
+    <string name="commentText">Hello world!</string>
+    <string name="addListComment">ADD COMMENT</string>
+
+
+    <string name="notif_termin">Allow notifications</string>
+    <string name="notif_termin_summ">Allow app to send notification, when wifi is avalible</string>
+    <string name="pref_notif">Pre-event time</string>
+    <string name="pref_notif_list">Set pre-event time</string>
+    <string name="pref_notif_key">pref_notif_key</string>
+
+    <string name="notifications">Notifications</string>
+    <string name="font_small">Small</string>
+    <string name="font_medium">Medium</string>
+    <string name="font_large">Large</string>
+    <string name="font">Font</string>
+    <string name="pref_font_list">pref_font_list</string>
+    <string name="pref_font_key">pref_font_key</string>
+    <string name="pref_font">Font</string>
+    <string name="pref_font_title">Size</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="tab_text_1">Reservations</string>
+    <string name="tab_text_2">Invitations</string>
+    <string name="myReservations"> My reservations</string>
+    <string name="myInvitations"> My invitations</string>
+    <string name="neutralText">text</string>
+    <string name="invite">INVITE</string>
+    <string name="cancel" tools:ignore="ButtonCase">CANCEL</string>
+    <string name="maps">MAPS</string>
+    <string name="comment">COMMENT</string>
+    <string name="favorites">favorites</string>
+    <string name="start">Start at:</string>
+    <string name="end">End at:</string>
+    <string name="reserve">RESERVE</string>
+    <string name="sport">Sport:</string>
+    <string name="str_tv_location">Your location:</string>
+    <string name="show_me_way">Show me the way</string>
+    <string name="navigation">NAVIGATION</string>
+    <string name="accept">ACCEPT</string>
+    <string name="reject">REJECT</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_about">About</string>
+    <string name="channel_name">channel_name</string>
+    <string name="channel_description">channel_description</string>
+
+
+    <string name="large_about_text">
+        "About application :\n\n"
+
+        "SPORT CENTERS is an application for organizing sports events."
+        "The app offers reading, commenting, searching, reviewing, reservations and invitation on sports events.As well as many additional functionality which are implemented in this application."
+
+        "\n\nAbout us :\n\n"
+        "This application was made as a student project by Tim9.\n"
+        "\n\nMembers of Tim9 on this project are :
+        "\n\nSmiljana Dragoljević, Tamara Perlinac, Goran Rajić and Marko Vučković.\n\n"
+
+
+    </string>
+</resources>
