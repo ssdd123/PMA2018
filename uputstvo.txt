@@ -1,0 +1,3 @@
+Nakon instaliranja i pokretanja aplikacije moguce je:
+ - ulogovati se: username: marko, password:marko
+ - registrovati
